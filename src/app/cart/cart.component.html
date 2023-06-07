@@ -1,0 +1,26 @@
+<div class="cart">
+    <div class="shopping-items">
+    
+        <div class="shopping-item" *ngFor="let item of items">
+            <h1>{{item.name}}</h1>
+            <p>Price: {{item.price}}</p>
+            <div>
+    
+                <button mat-fab color="primary" extended (click)="removeItem(item)">
+                    <mat-icon>remove_shopping_cart</mat-icon>
+                    remove
+                </button>
+                <div class="item_num">
+                    <button mat-icon-button (click)="itemDecrement(item)"><mat-icon>remove</mat-icon></button>
+                     {{item.amount}} <button mat-icon-button (click)="itemIncrement(item)"><mat-icon>add</mat-icon></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart_summary">
+        <p style="font-size: 1.5rem;">Total products: <span style="color: blue;">{{items.length}}</span></p>
+        <p style="font-size: 1.5rem;">Total amount: <span style="color: blue;">{{totalPriceWithFees}}</span></p>
+        <p style="font-size: 1.5rem;">Total fees: <span style="color: blue;">{{totalPrice}}</span></p>
+    </div>
+
+</div>

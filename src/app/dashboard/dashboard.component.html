@@ -1,0 +1,54 @@
+<div class="shopping-items">
+    <div class="shopping-item" *ngFor="let item of items">
+        <h1>{{item.name}}</h1>
+        <p>Price: {{item.price}}</p>
+        <button mat-fab color="primary" extended (click)="addToCart(item)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div>
+    <!-- <div class="shopping-item" #item1>
+        <h1>Item 1</h1>
+        <button mat-fab color="primary" extended (click)="addToCart(item1)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div>
+    <div class="shopping-item" #item2> 
+        <h1>Item 2</h1>
+        <button mat-fab color="primary" extended (click)="addToCart(item2)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div>
+    <div class="shopping-item" #item3>
+        <h1>Item 3</h1>
+        <button mat-fab color="primary" extended (click)="addToCart(item3)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div>
+    <div class="shopping-item" #item4>
+        <h1>Item 4</h1>
+        <button mat-fab color="primary" extended (click)="addToCart(item4)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div>
+    <div class="shopping-item" #item5>
+        <h1>Item 5</h1>
+        <button mat-fab color="primary" extended (click)="addToCart(item5)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div>
+    <div class="shopping-item" #item6>
+        <h1>Item 6</h1>
+        <button mat-fab color="primary" extended (click)="addToCart(item6)">
+            <mat-icon>add_shopping_cart</mat-icon>
+            add
+        </button>
+    </div> -->
+</div>
+
+<!-- <router-outlet></router-outlet> -->
